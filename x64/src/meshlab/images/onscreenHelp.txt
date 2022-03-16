@@ -1,0 +1,27 @@
+<font size="+1">
+<H2 >
+<table> <tr><td width='400' align='center'>操作区域</td></tr>
+</H2>
+<table>
+<tr><td width="200" align='right'>Drag:	           </td><td width="200">旋转</td></tr>
+<tr><td width="200" align='right'>Ctrl-Drag:       </td><td width="200">移动</td></tr>
+<tr><td width="200" align='right'>Wheel:           </td><td width="200">缩放	</td></tr>
+<tr><td width="200" align='right'>Alt-Drag:        </td><td width="200">Z轴缩放</td></tr>
+<tr><td width="200" align='right'>Ctrl-Shift-Drag: </td><td width="200">改变光照方向</td></tr>
+<tr><td width="200" align='right'>Shift-Wheel:     </td><td width="200" align='justify'>改变视角</td></tr>
+<tr><td width="200" align='right'>Ctrl-Wheel:      </td><td width="200">移动剪切面</td></tr>
+<tr><td width="200" align='right'>Double Click:    </td><td width="200">定位中心点<</td></tr>
+<tr><td width="200" align='right'>Alt+enter:       </td><td width="200">打开/关闭全屏模式</td></tr>
+<tr><td width="200" align='right'>Ctrl-H:    </td><td width="200">重置模型</td></tr>
+</table>
+<br>
+<H2 >
+<table> <tr><td width='400' align='center'>层</td></tr>
+</H2>
+<table>
+<tr><td width="200" align='right'>Click on eye icon: </td><td width="100">设置层的可见状态</td></tr>
+<tr><td width="200" align='right'>Ctrl-Click on eye icon: </td><td width="100">设置所有其它层为不可见</td></tr>
+<tr><td width="200" align='right'>Alt-Click on eye icon: </td><td width="100">设置所有其它层为可见</td></tr>
+<tr><td width="200" align='right'>Shift-Click on eye icon: </td><td width="100">反转所有层的可见状态</td></tr>
+</table>
+</font>

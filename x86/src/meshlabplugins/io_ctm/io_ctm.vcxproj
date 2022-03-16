@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F31F468-3F5B-3831-9285-200D198866D8}</ProjectGuid>
+    <RootNamespace>io_ctm</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>..\..\distrib\plugins\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>io_ctm</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>..\..\distrib\plugins\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>io_ctm</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\distrib\plugins\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">scientree_ctm</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\distrib\plugins\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">scientree_ctm</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..;..\..\..\..\vcglib;..\..\external\glew-1.7.0\include;..\..\external\OpenCTM-1.0.3\lib;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXmlPatterns;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtScript;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXml;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore;release;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtScript;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>OPENCTM_STATIC;_WINDOWS;UNICODE;WIN32;MESHLAB_SCALAR=float;NOMINMAX;QT_NO_DEBUG;QT_PLUGIN;QT_OPENGL_LIB;QT_XMLPATTERNS_LIB;QT_WIDGETS_LIB;QT_SCRIPT_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;../../distrib/common.lib;../../external/lib/win32-msvc2010/Release/openctm.lib;GLU32.lib;OpenGL32.lib;$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5XmlPatterns.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Script.lib;$(QTDIR)\lib\Qt5Network.lib;$(QTDIR)\lib\Qt5Xml.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;Qt5Core.lib;Qt5Gui.lib;Qt5OpenGL.lib;Qt5Script.lib;Qt5Widgets.lib;Qt5Xml.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\scientree_ctm.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>OPENCTM_STATIC;_WINDOWS;UNICODE;WIN32;MESHLAB_SCALAR=float;NOMINMAX;QT_NO_DEBUG;QT_PLUGIN;QT_OPENGL_LIB;QT_XMLPATTERNS_LIB;QT_WIDGETS_LIB;QT_SCRIPT_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..;..\..\..\..\vcglib;..\..\external\glew-1.7.0\include;..\..\external\OpenCTM-1.0.3\lib;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXmlPatterns;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtScript;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXml;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore;debug;..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtScript;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>OPENCTM_STATIC;_WINDOWS;UNICODE;WIN32;MESHLAB_SCALAR=float;NOMINMAX;QT_PLUGIN;QT_OPENGL_LIB;QT_XMLPATTERNS_LIB;QT_WIDGETS_LIB;QT_SCRIPT_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;../../distrib/common.lib;../../external/lib/win32-msvc2010/Debug/openctm.lib;GLU32.lib;OpenGL32.lib;$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5XmlPatternsd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Scriptd.lib;$(QTDIR)\lib\Qt5Networkd.lib;$(QTDIR)\lib\Qt5Xmld.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5OpenGLd.lib;Qt5Scriptd.lib;Qt5Widgetsd.lib;Qt5Xmld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\scientree_ctm.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>OPENCTM_STATIC;_WINDOWS;UNICODE;WIN32;MESHLAB_SCALAR=float;NOMINMAX;QT_PLUGIN;QT_OPENGL_LIB;QT_XMLPATTERNS_LIB;QT_WIDGETS_LIB;QT_SCRIPT_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_io_ctm.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_io_ctm.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="io_ctm.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\vcglib\wrap\io_trimesh\export_ctm.h" />
+    <ClInclude Include="..\..\..\..\vcglib\wrap\io_trimesh\import_ctm.h" />
+    <CustomBuild Include="io_ctm.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DOPENCTM_STATIC -D_WINDOWS -DUNICODE -DWIN32 -DMESHLAB_SCALAR=float -DNOMINMAX -DQT_NO_DEBUG -DQT_PLUGIN -DQT_OPENGL_LIB -DQT_XMLPATTERNS_LIB -DQT_WIDGETS_LIB -DQT_SCRIPT_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL  "-I.\..\.." "-I.\..\..\..\..\vcglib" "-I.\..\..\external\glew-1.7.0\include" "-I.\..\..\external\OpenCTM-1.0.3\lib" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXmlPatterns" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtScript" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXml" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore" "-I.\release" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing io_ctm.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DOPENCTM_STATIC -D_WINDOWS -DUNICODE -DWIN32 -DMESHLAB_SCALAR=float -DNOMINMAX -DQT_PLUGIN -DQT_OPENGL_LIB -DQT_XMLPATTERNS_LIB -DQT_WIDGETS_LIB -DQT_SCRIPT_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL  "-I.\..\.." "-I.\..\..\..\..\vcglib" "-I.\..\..\external\glew-1.7.0\include" "-I.\..\..\external\OpenCTM-1.0.3\lib" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXmlPatterns" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtScript" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtXml" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore" "-I.\debug" "-I.\..\..\..\..\..\..\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtXml"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing io_ctm.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="msvc2010_opengl" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,7 @@
+[Skin]
+Hintergrundfarbe=@Variant(\0\0\0\x43\x1\xff\xff\xb4\xb4\xb4\xb4\xb4\xb4\0\0)
+Titelfarbe=@Variant(\0\0\0\x43\x1\xff\xff\0\0\0\0\0\0\0\0)
+Titelschrift=@Variant(\0\0\0@\0\0\0\n\0\x41\0r\0i\0\x61\0l@$\0\0\0\0\0\0\xff\xff\xff\xff\x5\x1\0K\x10)
+SkinOn=true
+Skinpfad=skin/blue.svg
+Alpha=1.0

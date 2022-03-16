@@ -1,0 +1,26 @@
+QMainWindow {
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(217, 231, 247), stop: 0.4 rgb(194, 216, 242),
+                                 stop: 0.4 rgb(194, 216, 242), stop: 1.0 rgb(156, 193, 239));
+  color:rgb(59, 90, 130);
+}
+
+QMenu{
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(217, 231, 247), stop: 0.1 rgb(194, 216, 242),
+                                 stop: 0.5 rgb(194, 216, 242), stop: 1.0 rgb(174, 204, 242));
+  color:rgb(59, 90, 130);
+}
+
+QMenuBar
+{
+  background:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0  rgb(217, 231, 247), stop: 0.1 rgb(194, 216, 242),
+                                 stop: 0.5 rgb(194, 216, 242), stop: 1.0 rgb(174, 204, 242));
+  color:rgb(59, 90, 130);
+}
+
+QMenuBar::item
+{
+    background: transparent;
+}
