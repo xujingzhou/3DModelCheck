@@ -1,2 +1,2 @@
 # 3DModelCheck
-check and repair of the 3d model file 
+check and repair for the 3d model file 
